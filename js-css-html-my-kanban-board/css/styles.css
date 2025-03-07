@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(90deg, #b92a27, #1662bf);
+  height: 100vh;
+  color: #fff;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 2rem;
+  height: 8rem;
+  width: 100vw;
+}
+
+header .logo-container {
+  width: 32rem;
+}
+
+header .submission-container {
+  background-color: hsla(0, 0%, 100%, 0.3);
+  padding: 10px;
+  border-radius: 10px;
+  height: 100%;
+  width: 25rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgb(0, 0, 0, 0.1);
+
+  display: flex;
+}
+
+header .submission-container .input-container {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  border-radius: 5px 0 0 5px;
+}
+
+header .submission-container .input-container input[type="text"] {
+  width: 100%;
+  height: 50%;
+  border: none;
+  font-family: inherit;
+  border-radius: 5px;
+  padding: 0 4px;
+}
+
+header .submission-container input[type="submit"] {
+  background-color: hsl(1, 61%, 73%);
+  color: black;
+  padding: 2px;
+  width: 30%;
+  border: none;
+  font-family: inherit;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+header .submission-container input[type="submit"]:hover {
+  background-color: hsl(1, 61%, 63%);
+}
+
+header .logo-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+header .logo-container .logo-title .logo {
+  font-size: 4rem;
+}
+
+.line {
+  border-color: hsla(0, 0%, 100%, 0.3);
+}
+
+.column-containers .line {
+  margin-bottom: 1rem;
+}
+
+.column-containers {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  height: auto;
+  margin-top: 1rem;
+  padding: 0.8rem 2rem;
+}
+
+.column-container {
+  background: hsla(0, 0%, 100%, 0.3);
+  border-radius: 10px;
+  width: 350px;
+  padding: 10px 20px;
+  box-shadow: 0 3px 30px rgba(0, 0, 0, 0.2);
+}
+
+.column-title h3 {
+  padding: 10px 10px 16px 10px;
+}
+
+.todo-container {
+  border-radius: 5px;
+  margin-bottom: 1.2rem;
+  height: 125px;
+  overflow: hidden;
+}
+
+.todo-title {
+  height: 33%;
+  background-color: #9dc4e7;
+  border-radius: 5px 5px 0 0;
+  padding: 10px;
+  font-size: 0.9rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todo-description {
+  height: 67%;
+  color: black;
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+  padding: 10px;
+  font-size: 0.8rem;
+
+  display: flex;
+  align-items: center;
+}

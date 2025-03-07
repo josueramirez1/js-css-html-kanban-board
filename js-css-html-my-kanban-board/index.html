@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script defer src="js/app.js"></script>
+    <title>Kanban Board</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <div class="logo-title">
+          <div class="logo">❖</div>
+          <h1>Kanban Board</h1>
+        </div>
+        <p>
+          A place to organize task to completion as well as add new ones and
+          delete old ones
+        </p>
+      </div>
+      <form class="submission-container">
+        <div class="input-container">
+          <input type="text" id="title-text" placeholder="title..." />
+          <input
+            type="text"
+            id="description-text"
+            placeholder="description..."
+          />
+        </div>
+        <input type="submit" id="submit-btn" />
+      </form>
+    </header>
+    <hr class="line" />
+    <section class="column-containers">
+      <div class="column-container" id="column-1">
+        <div class="column-title">
+          <h3>✔ Backlog</h3>
+        </div>
+        <hr class="line" />
+      </div>
+      <div class="column-container" id="column-2">
+        <div class="column-title">
+          <h3>✔ Doing</h3>
+          <hr class="line" />
+        </div>
+      </div>
+      <div class="column-container" id="column-3">
+        <div class="column-title">
+          <h3>✔ Done</h3>
+          <hr class="line" />
+        </div>
+      </div>
+      <div class="column-container" id="column-4">
+        <div class="column-title">
+          <h3>✔ Won't Do</h3>
+          <hr class="line" />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
